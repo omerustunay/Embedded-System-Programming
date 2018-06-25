@@ -1,4 +1,6 @@
-/*Para Bozma Makinesi */
+/*Para Bozma Makinesi*/
+
+
 
 
 #include "inc/tm4c123gh6pm.h"
@@ -119,9 +121,9 @@ void lcd_init() {
 	cmd_8bit(0x30);
 	cmd_8bit(0x20);
 	cmd(0x28);               // 2 Satir olarak ayarla
-	cmd(0x0c);              // Culcd_ikili_yazdiror '� g�r�n�r yap
-	temizle();               // Ekran� temizle
-	cmd(0x6);                 // Yazi modunu a�(culcd_ikili_yazdiror otomatik ta��)
+	cmd(0x0c);              // Culcd_ikili_yazdiror 'Ä± gÃ¶rÃ¼nÃ¼r yap
+	temizle();               // EkranÄ± temizle
+	cmd(0x6);                 // Yazi modunu aÃ§(culcd_ikili_yazdiror otomatik taÅŸÄ±)
 }
 
 void koordinat(char x, char y) {
@@ -195,7 +197,7 @@ void hesapla(int para) {
 
 		if (kalanElde1 >= 1000) // sayi = 1259
 				{
-			virgulSolu = kalanElde1 / 100; // 1259/100; 12 virg�l�n solu;
+			virgulSolu = kalanElde1 / 100; // 1259/100; 12 virgÃ¼lÃ¼n solu;
 			virgulSagi = kalanElde1 - (virgulSolu * 100);
 
 			koordinat(1, 1);
@@ -213,8 +215,8 @@ void hesapla(int para) {
 			yazdir(b1);
 		} else if (kalanElde1 >= 100) // sayi = 733
 				{
-			virgulSolu = kalanElde1 / 100; // 733 / 100 = 7 virg�l�n solu;
-			virgulSagi = kalanElde1 - (virgulSolu * 100); //virg�lsagi = 33;
+			virgulSolu = kalanElde1 / 100; // 733 / 100 = 7 virgÃ¼lÃ¼n solu;
+			virgulSagi = kalanElde1 - (virgulSolu * 100); //virgÃ¼lsagi = 33;
 
 			koordinat(1, 1);
 			yazdir("-------------");
@@ -301,7 +303,7 @@ void hesapla(int para) {
 
 		if (kalanElde2 >= 1000) // sayi = 1259
 				{
-			virgulSolu = kalanElde2 / 100; // 1259/100; 12 virg�l�n solu;
+			virgulSolu = kalanElde2 / 100; // 1259/100; 12 virgÃ¼lÃ¼n solu;
 			virgulSagi = kalanElde2 - (virgulSolu * 100);
 
 			koordinat(1, 1);
@@ -321,8 +323,8 @@ void hesapla(int para) {
 
 		else if (kalanElde2 >= 100) // sayi = 733
 				{
-			virgulSolu = kalanElde2 / 100; // 733 / 100 = 7 virg�l�n solu;
-			virgulSagi = kalanElde2 - (virgulSolu * 100); //virg�lsagi = 33;
+			virgulSolu = kalanElde2 / 100; // 733 / 100 = 7 virgÃ¼lÃ¼n solu;
+			virgulSagi = kalanElde2 - (virgulSolu * 100); //virgÃ¼lsagi = 33;
 
 			koordinat(1, 1);
 			yazdir("-------------");
@@ -406,8 +408,8 @@ void hesapla(int para) {
 
 		if (kalanElde3 >= 100) // sayi = 733
 				{
-			virgulSolu = kalanElde3 / 100; // 733 / 100 = 7 virg�l�n solu;
-			virgulSagi = kalanElde3 - (virgulSolu * 100); //virg�lsagi = 33;
+			virgulSolu = kalanElde3 / 100; // 733 / 100 = 7 virgÃ¼lÃ¼n solu;
+			virgulSagi = kalanElde3 - (virgulSolu * 100); //virgÃ¼lsagi = 33;
 
 			koordinat(1, 1);
 			yazdir("-------------");
@@ -494,8 +496,8 @@ void hesapla(int para) {
 
 		if (kalanElde4 >= 100) // sayi = 733
 				{
-			virgulSolu = kalanElde4 / 100; // 733 / 100 = 7 virg�l�n solu;
-			virgulSagi = kalanElde4 - (virgulSolu * 100); //virg�lsagi = 33;
+			virgulSolu = kalanElde4 / 100; // 733 / 100 = 7 virgÃ¼lÃ¼n solu;
+			virgulSagi = kalanElde4 - (virgulSolu * 100); //virgÃ¼lsagi = 33;
 
 			koordinat(1, 1);
 			yazdir("-------------");
@@ -1033,10 +1035,10 @@ D7               PD3
 BUTTON
 ----------
 ONLAR           PB0
-B�RLER          PB1
+BÄ°RLER          PB1
 NOKTA           PB2
-ONDAB�RLER      PB3
-Y�ZDEB�RLER     PB4
+ONDABÄ°RLER      PB3
+YÃœZDEBÄ°RLER     PB4
 ENTER           PB5
 RESET           PC4
 
@@ -1044,14 +1046,13 @@ RESET           PC4
 LED
 ----
 ONLAR           PE3
-B�RLER          PE4
+BÄ°RLER          PE4
 NOKTA           PE5
-ONDAB�RLER      PA7
-Y�ZDEB�RLER     PA6
+ONDABÄ°RLER      PA7
+YÃœZDEBÄ°RLER     PA6
 ENTER           PA4
 RESET           PF4
 
 
-/-------------------------------------------/
+ /--------------------------------------------------------/
 */
-
