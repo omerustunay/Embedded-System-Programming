@@ -303,7 +303,7 @@ void hesapla(int para) {
 
 		if (kalanElde2 >= 1000) // sayi = 1259
 				{
-			virgulSolu = kalanElde2 / 100; // 1259/100; 12 virgÃ¼lÃ¼n solu;
+			virgulSolu = kalanElde2 / 100; // 1259/100; 12 virgulun solu;
 			virgulSagi = kalanElde2 - (virgulSolu * 100);
 
 			koordinat(1, 1);
@@ -323,8 +323,8 @@ void hesapla(int para) {
 
 		else if (kalanElde2 >= 100) // sayi = 733
 				{
-			virgulSolu = kalanElde2 / 100; // 733 / 100 = 7 virgÃ¼lÃ¼n solu;
-			virgulSagi = kalanElde2 - (virgulSolu * 100); //virgÃ¼lsagi = 33;
+			virgulSolu = kalanElde2 / 100; // 733 / 100 = 7 virgulun solu;
+			virgulSagi = kalanElde2 - (virgulSolu * 100); //virgulsagi = 33;
 
 			koordinat(1, 1);
 			yazdir("-------------");
@@ -1028,17 +1028,17 @@ VDD              +5V
 V0               GROUND
 RS               PE1
 E                PE2
- D4              PD0
+D4               PD0
 D5               PD1
 D6               PD2
 D7               PD3
 BUTTON
 ----------
 ONLAR           PB0
-BÄ°RLER          PB1
+BIRLER          PB1
 NOKTA           PB2
-ONDABÄ°RLER      PB3
-YÃœZDEBÄ°RLER     PB4
+ONDABIRLER       PB3
+YUZDEBIRLER     PB4
 ENTER           PB5
 RESET           PC4
 
@@ -1046,10 +1046,10 @@ RESET           PC4
 LED
 ----
 ONLAR           PE3
-BÄ°RLER          PE4
+BIRLER          PE4
 NOKTA           PE5
-ONDABÄ°RLER      PA7
-YÃœZDEBÄ°RLER     PA6
+ONDABIRLER      PA7
+YUZDEBIRLER     PA6
 ENTER           PA4
 RESET           PF4
 
