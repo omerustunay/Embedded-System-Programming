@@ -1,10 +1,6 @@
-/*Para Bozma Makinesi
- /----------------------------------------/
+/*Para Bozma Makinesi */
 
- Omer Ustunay    160202050
- Batuhan Subasi 160202091
- /---------------------------------------/
- */
+
 #include "inc/tm4c123gh6pm.h"
 #include <stdlib.h>
 #include "driverlib/sysctl.h"
