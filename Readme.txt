@@ -1,0 +1,1 @@
+Virtual box üzerinde Eclipse Ide sine yapistirin.Calistirin.
